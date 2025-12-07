@@ -25,13 +25,7 @@ const values = [
   },
 ];
 
-const milestones = [
-  { year: "2014", title: "Founded", description: "Verion Security was established with a vision to democratize cybersecurity." },
-  { year: "2016", title: "ISO Certified", description: "Achieved our first ISO certification, setting the standard for our services." },
-  { year: "2019", title: "100+ Clients", description: "Reached a milestone of helping over 100 organizations secure their operations." },
-  { year: "2022", title: "DPDP Experts", description: "Became pioneers in DPDP compliance consulting in India." },
-  { year: "2024", title: "Pan-India Presence", description: "Expanded operations across major metropolitan areas." },
-];
+
 
 const About = () => {
   return (
@@ -128,47 +122,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Journey</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A decade of excellence in cybersecurity consulting.
-            </p>
-          </motion.div>
 
-          <div className="max-w-3xl mx-auto">
-            {milestones.map((milestone, index) => (
-              <motion.div
-                key={milestone.year}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="flex gap-6 mb-8 last:mb-0"
-              >
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-semibold text-sm">
-                    {milestone.year}
-                  </div>
-                  {index < milestones.length - 1 && (
-                    <div className="w-px h-full bg-border mt-2" />
-                  )}
-                </div>
-                <div className="pb-8">
-                  <h3 className="text-xl font-semibold mb-1">{milestone.title}</h3>
-                  <p className="text-muted-foreground">{milestone.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Why Choose Us */}
       <section className="py-24 bg-gradient-dark text-background">
@@ -187,9 +141,9 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Award, title: "Certified Experts", description: "Our team holds multiple industry-recognized certifications." },
-              { icon: Users, title: "Client-Centric", description: "We tailor our approach to meet your specific needs." },
-              { icon: Globe, title: "Industry Experience", description: "Deep expertise across multiple industry verticals." },
+              { icon: Award, title: "Certified Experts", description: "Our team is equipped with industry-leading certifications such as DPO, CEH, OSCP, and ISO 27001 Lead Auditor/Implementer, ensuring deep technical competence and proven expertise. Every engagement is led by professionals who understand global standards, modern attack vectors, and compliance expectations—giving you confidence that your security is in certified hands." },
+              { icon: Users, title: "Client-Centric", description: "Since 2011, we have successfully implemented cybersecurity and compliance programs for 30+ organisations across sectors including healthcare, education, power, IT services, and manufacturing. We tailor every assessment, roadmap, and implementation to your unique business processes, ensuring solutions that are practical, scalable, and aligned with your operational realities." },
+              { icon: Globe, title: "Industry Experience", description: "With over a decade of hands-on exposure across diverse industry verticals, we bring a mature understanding of real-world risks, regulatory expectations, and sector-specific challenges. Our experience enables us to design security and compliance strategies that work seamlessly in any environment—whether regulated, high-risk, or rapidly scaling." },
             ].map((item, index) => (
               <motion.div
                 key={item.title}
