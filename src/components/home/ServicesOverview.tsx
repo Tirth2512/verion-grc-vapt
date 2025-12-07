@@ -16,7 +16,7 @@ const services = [
     title: "VAPT Services",
     description:
       "Vulnerability Assessment and Penetration Testing to identify and remediate security weaknesses before they can be exploited.",
-    features: ["Network Testing", "Application Security", "Red Team Exercises"],
+    features: ["Network Testing", "Application Security", "iOS Pentesting"],
   },
   {
     icon: Shield,

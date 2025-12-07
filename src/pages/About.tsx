@@ -48,7 +48,7 @@ const About = () => {
               About <span className="text-gradient">Verion Security</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              We are a team of passionate cybersecurity professionals dedicated to helping 
+              We are a team of passionate cybersecurity professionals dedicated to helping
               organizations navigate the complex landscape of digital security and compliance.
             </p>
           </motion.div>
@@ -70,9 +70,7 @@ const About = () => {
               </div>
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-muted-foreground text-lg">
-                To empower organizations of all sizes with robust cybersecurity frameworks, 
-                enabling them to protect their digital assets, achieve regulatory compliance, 
-                and build trust with their stakeholders.
+                Our mission is to simplify and strengthen the cybersecurity and compliance journey by delivering intelligent GRC services, precise VAPT assessments, and seamless certification support across frameworks such as ISO 27001, 20000, 9001, 22301, and the DPDP Act of India. We are committed to helping organisations build secure foundations, reduce risk, and achieve continuous compliance through clarity, expertise, and unwavering dedication.
               </p>
             </motion.div>
 
@@ -87,9 +85,7 @@ const About = () => {
               </div>
               <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
               <p className="text-muted-foreground text-lg">
-                To be the most trusted cybersecurity partner in India, known for our 
-                expertise, integrity, and commitment to helping organizations thrive 
-                in an increasingly connected world.
+                To be the trusted cybersecurity and compliance partner that empowers every organisation—regardless of size—to operate with confidence, resilience, and integrity in a rapidly evolving digital world. We strive to make robust security, strong governance, and global-standard compliance accessible, achievable, and sustainable for all.
               </p>
             </motion.div>
           </div>
