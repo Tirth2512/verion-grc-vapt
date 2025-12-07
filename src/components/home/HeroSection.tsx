@@ -5,11 +5,16 @@ import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden">
-      {/* Background Elements */}
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-hero" />
+      <div className="absolute inset-0 bg-gradient-mesh" />
+      
+      {/* Floating Orbs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-10 w-72 h-72 bg-purple/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-violet/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-purple-light/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -24,7 +29,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-primary text-sm font-medium mb-6"
             >
               <Shield className="h-4 w-4" />
               Trusted Cybersecurity Partner
@@ -85,7 +90,7 @@ export function HeroSection() {
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-0"
               >
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 p-4 bg-background rounded-2xl shadow-lg">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 p-4 glass rounded-2xl">
                   <Lock className="h-6 w-6 text-primary" />
                 </div>
               </motion.div>
@@ -95,7 +100,7 @@ export function HeroSection() {
                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-0"
               >
-                <div className="absolute top-1/2 -right-8 -translate-y-1/2 p-4 bg-background rounded-2xl shadow-lg">
+                <div className="absolute top-1/2 -right-8 -translate-y-1/2 p-4 glass rounded-2xl">
                   <CheckCircle className="h-6 w-6 text-primary" />
                 </div>
               </motion.div>
