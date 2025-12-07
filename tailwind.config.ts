@@ -52,8 +52,9 @@ export default {
         },
         navy: "hsl(var(--navy))",
         "navy-light": "hsl(var(--navy-light))",
-        teal: "hsl(var(--teal))",
-        "teal-dark": "hsl(var(--teal-dark))",
+        purple: "hsl(var(--purple))",
+        "purple-light": "hsl(var(--purple-light))",
+        violet: "hsl(var(--violet))",
         slate: "hsl(var(--slate))",
         "off-white": "hsl(var(--off-white))",
         sidebar: {
