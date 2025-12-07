@@ -17,7 +17,7 @@ const certifications = [
   {
     name: "ISO 20000",
     description: "IT Service Management",
-    color: "from-violet-500 to-purple-500",
+    color: "from-[hsl(var(--violet))] to-[hsl(var(--purple))]",
   },
   {
     name: "ISO 9001",
@@ -45,7 +45,7 @@ export function CertificationsPreview() {
             Certifications We Help You Achieve
           </h2>
           <p className="text-muted-foreground text-lg">
-            Our expert team guides you through the entire certification process, 
+            Our expert team guides you through the entire certification process,
             from gap analysis to successful audit completion.
           </p>
         </motion.div>

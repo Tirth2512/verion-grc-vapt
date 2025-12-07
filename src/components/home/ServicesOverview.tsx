@@ -29,8 +29,8 @@ const services = [
 
 export function ServicesOverview() {
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-24 bg-gradient-mesh relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export function ServicesOverview() {
             Comprehensive Security Solutions
           </h2>
           <p className="text-muted-foreground text-lg">
-            We provide end-to-end cybersecurity services to protect your organization 
+            We provide end-to-end cybersecurity services to protect your organization
             and ensure regulatory compliance.
           </p>
         </motion.div>
@@ -54,7 +54,7 @@ export function ServicesOverview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/20 hover:shadow-xl transition-all duration-300"
+              className="group p-8 rounded-2xl glass border border-white/20 hover:border-primary/40 hover:shadow-xl transition-all duration-300"
             >
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <service.icon className="h-7 w-7" />
