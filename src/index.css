@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 270 70% 55%;
+    --primary: 276 84% 56%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 270 30% 96%;
@@ -32,16 +32,16 @@
 
     --border: 270 20% 91%;
     --input: 270 20% 91%;
-    --ring: 270 70% 55%;
+    --ring: 276 84% 56%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
     --navy: 270 50% 12%;
     --navy-light: 270 30% 25%;
-    --purple: 270 70% 55%;
+    --purple: 276 84% 56%;
     --purple-light: 285 75% 65%;
-    --violet: 280 80% 60%;
+    --violet: 290 80% 60%;
     --slate: 270 10% 47%;
     --off-white: 270 20% 98%;
 
