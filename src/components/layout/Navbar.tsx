@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -53,8 +54,9 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Button & Theme Toggle */}
+          <div className="hidden md:flex items-center gap-3">
+            <ModeToggle />
             <Link to="/contact">
               <Button variant="hero" size="sm">
                 Get Started
@@ -98,11 +100,14 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link to="/contact" onClick={() => setIsOpen(false)}>
-                <Button variant="hero" className="w-full mt-2">
-                  Get Started
-                </Button>
-              </Link>
+              <div className="flex items-center gap-3 pt-2">
+                <ModeToggle />
+                <Link to="/contact" onClick={() => setIsOpen(false)} className="flex-1">
+                  <Button variant="hero" className="w-full">
+                    Get Started
+                  </Button>
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}
