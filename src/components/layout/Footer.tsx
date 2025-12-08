@@ -91,8 +91,8 @@ export function Footer() {
             <h4 className="font-semibold mb-4 font-playfair">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-white/70">
-                <Mail className="h-4 w-4" />
-                <span>info@verionsecurity.com</span>
+                <Mail className="h-4 w-4 flex-shrink-0" />
+                <span className="break-all text-sm">info@verionsecurity.com</span>
               </li>
               <li className="flex items-center gap-2 text-white/70">
                 <Phone className="h-4 w-4" />
