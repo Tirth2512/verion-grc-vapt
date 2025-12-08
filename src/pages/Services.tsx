@@ -85,7 +85,7 @@ const Services = () => {
               Our <span className="text-gradient">Services</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Comprehensive cybersecurity solutions tailored to protect your organization 
+              Comprehensive cybersecurity solutions tailored to protect your organization
               and ensure regulatory compliance.
             </p>
           </motion.div>
@@ -107,7 +107,7 @@ const Services = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">GRC Services</h2>
             <p className="text-muted-foreground text-lg max-w-2xl">
-              Build a robust security foundation with our governance, risk, and compliance services 
+              Build a robust security foundation with our governance, risk, and compliance services
               designed to protect your organization and meet regulatory requirements.
             </p>
           </motion.div>
@@ -150,7 +150,7 @@ const Services = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">VAPT Services</h2>
             <p className="text-muted-foreground text-lg max-w-2xl">
-              Proactive security testing to identify vulnerabilities before they can be 
+              Proactive security testing to identify vulnerabilities before they can be
               exploited by malicious actors.
             </p>
           </motion.div>
@@ -216,7 +216,7 @@ const Services = () => {
       </section>
 
       {/* Why Our Services */}
-      <section className="py-24 bg-gradient-dark text-background">
+      <section className="py-24 bg-gradient-dark text-white">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -224,11 +224,11 @@ const Services = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
                 Why Choose Our Services?
               </h2>
-              <p className="text-background/70 text-lg mb-8">
-                We combine deep expertise with a client-centric approach to deliver 
+              <p className="text-white/70 text-lg mb-8">
+                We combine deep expertise with a client-centric approach to deliver
                 security solutions that truly protect your organization.
               </p>
               <ul className="space-y-4">
@@ -251,11 +251,11 @@ const Services = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-background/5 rounded-2xl p-8 border border-background/10"
+              className="bg-background/5 rounded-2xl p-8 border border-white/10"
             >
               <h3 className="text-2xl font-semibold mb-6">Get Started Today</h3>
-              <p className="text-background/70 mb-6">
-                Schedule a free consultation to discuss your security needs and 
+              <p className="text-white/70 mb-6">
+                Schedule a free consultation to discuss your security needs and
                 learn how we can help protect your organization.
               </p>
               <Link to="/contact">

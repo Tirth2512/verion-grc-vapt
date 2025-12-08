@@ -115,7 +115,7 @@ const Certifications = () => {
               <span className="text-gradient">Certifications</span> We Help You Achieve
             </h1>
             <p className="text-xl text-muted-foreground">
-              Navigate the complex world of compliance with our expert guidance. 
+              Navigate the complex world of compliance with our expert guidance.
               We support you through every step of your certification journey.
             </p>
           </motion.div>
@@ -132,9 +132,8 @@ const Certifications = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                  }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <div className="flex items-center gap-4 mb-4">
@@ -159,9 +158,8 @@ const Certifications = () => {
                 </div>
 
                 <div
-                  className={`p-8 rounded-2xl bg-muted/50 border border-border ${
-                    index % 2 === 1 ? "lg:order-1" : ""
-                  }`}
+                  className={`p-8 rounded-2xl bg-muted/50 border border-border ${index % 2 === 1 ? "lg:order-1" : ""
+                    }`}
                 >
                   <h3 className="font-semibold text-lg mb-4">Key Benefits</h3>
                   <ul className="space-y-3">
@@ -192,7 +190,7 @@ const Certifications = () => {
               Our Certification Process
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A proven methodology that has helped over 150 organizations achieve 
+              A proven methodology that has helped over 150 organizations achieve
               their certification goals.
             </p>
           </motion.div>
@@ -219,18 +217,18 @@ const Certifications = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-dark text-background">
+      <section className="py-24 bg-gradient-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
               Ready to Get Certified?
             </h2>
-            <p className="text-background/70 text-lg max-w-2xl mx-auto mb-8">
-              Let us help you navigate the certification process. Schedule a free 
+            <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8">
+              Let us help you navigate the certification process. Schedule a free
               consultation to discuss your requirements.
             </p>
             <Link to="/contact">

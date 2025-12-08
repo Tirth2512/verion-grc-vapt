@@ -125,7 +125,7 @@ const About = () => {
 
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-gradient-dark text-background">
+      <section className="py-24 bg-gradient-dark text-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,8 +133,8 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Us</h2>
-            <p className="text-background/70 text-lg max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Why Choose Us</h2>
+            <p className="text-white/70 text-lg max-w-2xl mx-auto">
               What sets Verion Security apart from the rest.
             </p>
           </motion.div>
@@ -157,7 +157,7 @@ const About = () => {
                   <item.icon className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-background/70">{item.description}</p>
+                <p className="text-white/70">{item.description}</p>
               </motion.div>
             ))}
           </div>

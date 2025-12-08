@@ -20,13 +20,13 @@ export function CTASection() {
           </div>
 
           <div className="relative px-8 py-16 md:px-16 md:py-20 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-background mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
               Ready to Secure Your
               <br />
               Organization?
             </h2>
-            <p className="text-background/70 text-lg max-w-2xl mx-auto mb-10">
-              Let's discuss how we can help you achieve compliance and protect 
+            <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10">
+              Let's discuss how we can help you achieve compliance and protect
               your business from cyber threats. Schedule a free consultation today.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -43,7 +43,7 @@ export function CTASection() {
                 <Button
                   variant="outline"
                   size="xl"
-                  className="border-background/30 text-background hover:bg-background hover:text-foreground"
+                  className="border-white/30 text-white hover:bg-white hover:text-navy"
                 >
                   Learn More
                 </Button>

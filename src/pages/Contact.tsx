@@ -86,7 +86,7 @@ const Contact = () => {
               Get in <span className="text-gradient">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Ready to secure your organization? Let's discuss how we can help you 
+              Ready to secure your organization? Let's discuss how we can help you
               achieve your cybersecurity and compliance goals.
             </p>
           </motion.div>
@@ -251,8 +251,8 @@ const Contact = () => {
               </div>
 
               {/* What to Expect */}
-              <div className="p-6 rounded-2xl bg-gradient-dark text-background">
-                <h3 className="text-xl font-semibold mb-4">What to Expect</h3>
+              <div className="p-6 rounded-2xl bg-gradient-dark text-white">
+                <h3 className="text-xl font-semibold mb-4 text-primary">What to Expect</h3>
                 <ul className="space-y-3">
                   {[
                     "Response within 24 hours",
