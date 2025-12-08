@@ -74,16 +74,16 @@
   }
 
   .dark {
-    --background: 260 50% 4%;
+    --background: 222 47% 6%;
     --foreground: 210 40% 98%;
 
-    --card: 260 50% 6%;
+    --card: 222 47% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 260 50% 6%;
+    --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 276 84% 56%;
+    --primary: 270 70% 60%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 270 30% 17%;
@@ -100,7 +100,7 @@
 
     --border: 270 30% 17%;
     --input: 270 30% 17%;
-    --ring: 276 84% 56%;
+    --ring: 270 70% 60%;
   }
 }
 
