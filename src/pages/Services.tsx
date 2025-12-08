@@ -203,7 +203,26 @@ const Services = () => {
                 transition={{ delay: index * 0.1 }}
                 className="relative text-center"
               >
-                <div className="text-5xl font-bold text-primary/20 mb-4">{item.step}</div>
+                <motion.div
+                  animate={{
+                    color: ["rgba(var(--primary), 0.2)", "rgba(var(--primary), 1)", "rgba(var(--primary), 0.2)"],
+                    textShadow: [
+                      "0 0 0px rgba(var(--primary), 0)",
+                      "0 0 20px rgba(var(--primary), 0.5)",
+                      "0 0 0px rgba(var(--primary), 0)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatDelay: (processSteps.length - 1) * 1.5,
+                    delay: index * 1.5,
+                    ease: "easeInOut"
+                  }}
+                  className="text-5xl font-bold mb-4"
+                >
+                  {item.step}
+                </motion.div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
                 {index < processSteps.length - 1 && (

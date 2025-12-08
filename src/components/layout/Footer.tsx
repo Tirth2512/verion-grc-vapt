@@ -21,7 +21,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-foreground text-background dark:bg-zinc-950 dark:text-white">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand Column */}
@@ -33,7 +33,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-background/70 mb-6 max-w-sm">
-              Empowering organizations with comprehensive cybersecurity solutions. 
+              Empowering organizations with comprehensive cybersecurity solutions.
               Your trusted partner in GRC and VAPT services.
             </p>
             <div className="flex gap-4">
