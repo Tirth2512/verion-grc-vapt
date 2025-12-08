@@ -41,7 +41,7 @@ export function CertificationsPreview() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">
             Certifications We Help You Achieve
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -65,7 +65,7 @@ export function CertificationsPreview() {
               >
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="font-semibold text-lg mb-1">{cert.name}</h3>
+              <h3 className="font-semibold text-lg mb-1 font-playfair">{cert.name}</h3>
               <p className="text-sm text-muted-foreground">{cert.description}</p>
             </motion.div>
           ))}
