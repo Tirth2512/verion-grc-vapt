@@ -21,14 +21,14 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background dark:bg-zinc-950 dark:text-white">
+    <footer className="bg-slate-900 text-white dark:bg-zinc-950">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <Shield className="h-8 w-8 text-primary" />
-              <span className="text-xl font-semibold">
+              <span className="text-xl font-semibold font-playfair">
                 Verion<span className="text-primary">Security</span>
               </span>
             </Link>
@@ -54,7 +54,7 @@ export function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4 font-playfair">Company</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -71,7 +71,7 @@ export function Footer() {
 
           {/* Services Links */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4 font-playfair">Services</h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
@@ -88,7 +88,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4 font-playfair">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-white/70">
                 <Mail className="h-4 w-4" />

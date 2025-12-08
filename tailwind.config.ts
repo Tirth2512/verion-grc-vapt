@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        outfit: ["Outfit", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
+        sora: ["Sora", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
