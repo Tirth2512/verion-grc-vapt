@@ -97,18 +97,7 @@ export function HeroSection() {
                 }}
                 className="relative z-10 transform-style-3d bg-transparent"
               >
-                {/* Layer 1 (Back) */}
-                <div className="absolute w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(-15px)" }}>
-                  <Shield className="w-full h-full text-primary/30" />
-                </div>
-                {/* Layer 2 */}
-                <div className="absolute w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(-10px)" }}>
-                  <Shield className="w-full h-full text-primary/50" />
-                </div>
-                {/* Layer 3 */}
-                <div className="absolute w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(-5px)" }}>
-                  <Shield className="w-full h-full text-primary/70" />
-                </div>
+                {/* Layers 1-3 removed for single shield look */}
                 {/* Layer 4 (Main Front) */}
                 <div className="relative w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(0px)" }}>
                   <Shield className="w-full h-full text-primary drop-shadow-[0_0_25px_rgba(var(--primary),0.8)]" />
@@ -128,7 +117,7 @@ export function HeroSection() {
                 className="absolute w-80 h-80 border-[6px] border-primary/40 rounded-full transform-style-3d shadow-[0_0_15px_rgba(var(--primary),0.3)]"
                 style={{ rotateY: 45 }}
               >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-[0_0_10px_bg-primary]" />
+                {/* Dot removed */}
               </motion.div>
 
               {/* Ring 2 - Horizontal/Tilted Spin */}
@@ -138,7 +127,7 @@ export function HeroSection() {
                 className="absolute w-96 h-96 border-[4px] border-accent/60 rounded-full transform-style-3d shadow-[0_0_15px_rgba(var(--accent),0.3)]"
                 style={{ rotateX: 60 }}
               >
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-5 bg-accent rounded-full shadow-[0_0_15px_bg-accent]" />
+                {/* Dot removed */}
               </motion.div>
 
               {/* Ring 3 - Outer Slow Spin */}
