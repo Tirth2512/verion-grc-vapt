@@ -37,7 +37,7 @@ export function ServicesOverview() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Comprehensive Security Solutions
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -60,7 +60,7 @@ export function ServicesOverview() {
                 <service.icon className="h-7 w-7" />
               </div>
 
-              <h3 className="text-xl font-semibold mb-3 font-playfair">{service.title}</h3>
+              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
               <p className="text-muted-foreground mb-6">{service.description}</p>
 
               <ul className="space-y-2 mb-6">
