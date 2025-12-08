@@ -72,7 +72,6 @@ export function HeroSection() {
           </motion.div>
 
           {/* Visual Element */}
-          {/* Visual Element */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -84,7 +83,7 @@ export function HeroSection() {
               <div className="absolute w-64 h-64 rounded-full bg-primary/20 blur-[60px] animate-pulse" />
               <div className="absolute w-48 h-48 rounded-full bg-accent/20 blur-[40px] animate-pulse delay-75" />
 
-              {/* Main Shield Container */}
+              {/* Main Shield Container - Volumetric Stack */}
               <motion.div
                 animate={{
                   y: [0, -20, 0],
@@ -96,46 +95,64 @@ export function HeroSection() {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="relative z-10 transform-style-3d"
+                className="relative z-10 transform-style-3d bg-transparent"
               >
-                {/* Shield Icon */}
-                <div className="relative w-40 h-40 flex items-center justify-center">
-                  <Shield className="w-full h-full text-primary drop-shadow-[0_0_15px_rgba(var(--primary),0.5)]" />
-
-                  {/* Internal Glow */}
+                {/* Layer 1 (Back) */}
+                <div className="absolute w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(-15px)" }}>
+                  <Shield className="w-full h-full text-primary/30" />
+                </div>
+                {/* Layer 2 */}
+                <div className="absolute w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(-10px)" }}>
+                  <Shield className="w-full h-full text-primary/50" />
+                </div>
+                {/* Layer 3 */}
+                <div className="absolute w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(-5px)" }}>
+                  <Shield className="w-full h-full text-primary/70" />
+                </div>
+                {/* Layer 4 (Main Front) */}
+                <div className="relative w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(0px)" }}>
+                  <Shield className="w-full h-full text-primary drop-shadow-[0_0_25px_rgba(var(--primary),0.8)]" />
                   <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl -z-10" />
+                </div>
+                {/* Layer 5 (Front Glint) */}
+                <div className="absolute w-40 h-40 flex items-center justify-center transform-style-3d" style={{ transform: "translateZ(5px)" }}>
+                  <Shield className="w-full h-full text-white/10" />
                 </div>
               </motion.div>
 
-              {/* Gyroscopic Rings */}
+              {/* Gyroscopic Rings - THICKER */}
               {/* Ring 1 - Vertical Spin */}
               <motion.div
                 animate={{ rotateX: 360 }}
                 transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                className="absolute w-80 h-80 border-2 border-primary/30 rounded-full transform-style-3d"
+                className="absolute w-80 h-80 border-[6px] border-primary/40 rounded-full transform-style-3d shadow-[0_0_15px_rgba(var(--primary),0.3)]"
                 style={{ rotateY: 45 }}
               >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full shadow-[0_0_10px_bg-primary]" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-[0_0_10px_bg-primary]" />
               </motion.div>
 
               {/* Ring 2 - Horizontal/Tilted Spin */}
               <motion.div
                 animate={{ rotateY: 360 }}
                 transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
-                className="absolute w-96 h-96 border border-accent/40 rounded-full transform-style-3d"
+                className="absolute w-96 h-96 border-[4px] border-accent/60 rounded-full transform-style-3d shadow-[0_0_15px_rgba(var(--accent),0.3)]"
                 style={{ rotateX: 60 }}
               >
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent rounded-full shadow-[0_0_10px_bg-accent]" />
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-5 bg-accent rounded-full shadow-[0_0_15px_bg-accent]" />
               </motion.div>
 
               {/* Ring 3 - Outer Slow Spin */}
               <motion.div
                 animate={{ rotateZ: -360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute w-[450px] h-[450px] border border-primary/20 border-dashed rounded-full"
+                className="absolute w-[450px] h-[450px] border-[2px] border-primary/30 border-dashed rounded-full"
               >
-                <Lock className="absolute top-10 left-10 w-6 h-6 text-primary/60" />
-                <CheckCircle className="absolute bottom-10 right-10 w-6 h-6 text-accent/60" />
+                <div className="absolute top-10 left-10 p-3 bg-background/50 backdrop-blur-md rounded-xl border border-primary/30 shadow-lg">
+                  <Lock className="w-6 h-6 text-primary" />
+                </div>
+                <div className="absolute bottom-10 right-10 p-3 bg-background/50 backdrop-blur-md rounded-xl border border-accent/30 shadow-lg">
+                  <CheckCircle className="w-6 h-6 text-accent" />
+                </div>
               </motion.div>
 
               {/* Scanning Scanning Effect */}
