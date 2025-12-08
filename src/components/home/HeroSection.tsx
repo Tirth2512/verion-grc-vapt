@@ -40,7 +40,7 @@ export function HeroSection() {
               Trusted Cybersecurity Partner
             </motion.div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-playfair">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Securing Your
               <br />
               <span className="text-gradient">Digital Future</span>
